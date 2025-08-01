@@ -5,6 +5,7 @@ class Human {
     //initialising data members
     public:
     int height;
+    public:
     int weight;
     int age;
     
@@ -16,16 +17,18 @@ class Human {
     void setweight(int wt){
         this->weight = wt;
     }
+  
     void setage(int a){
         this->age = a;
     }
-
+    
     int show_height(){
         return this->height;
     }
     int show_weight(){
         return this->weight;
     }
+    
     int show_age(){
         return this->age;
     }
@@ -42,16 +45,22 @@ class Male : public Human{
     void sleep(){
         cout<< "MAN Is sleeping \n ";
     }
+    int getheight(){
+        return this->height;
+    }
+    int getweight(){
+        return this->weight;
+    }
 };
 int main(){
     Male obj1;
-    obj1.setheight(175);
-    obj1.setweight(67);
-    obj1.setage(21);
+    // obj1.setheight(175);
+    // obj1.setweight(67);
+    // obj1.setage(21);
 
-    cout<<obj1.show_age()<<"\n";
-    cout<< obj1.show_height()<<"\n";
-    cout<< obj1.show_weight()<<"\n" ;
+    cout<< obj1.getheight()<<"\n";
+    cout<< obj1.getweight()<<"\n";
+    //cout<< obj1.show_weight()<<"\n" ;
     obj1.sleep();
 
 }
