@@ -13,5 +13,4 @@ using namespace std;
 
 int main(){
     A a1;
-    a1.solve();
 }
