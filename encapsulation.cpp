@@ -7,7 +7,7 @@ using namespace std;
     int val;
     public:
     void solve(){
-        cout<<" This is an exmple of encapsulation"<<endl;
+        cout<<" This is an example of encapsulation"<<endl;
     }
  };
 
